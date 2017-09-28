@@ -1,19 +1,16 @@
 <template>
-  <div id="app">
-    {{msg}}
+  <div>
+    <router-view></router-view>
+    <span>11</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Start'
-    }
-  }
+  
 }
 </script>
 
 <style>
+
 </style>
