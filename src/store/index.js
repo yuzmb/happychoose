@@ -16,10 +16,6 @@ const state = {
     'type': 'ONE',
     'topic_name': '题目一',
     'active_id': '1',
-    'active_title': '欢乐星期五标题',
-    'active_topic_phase': '第一周',
-    'active_start_time': '1479139200',
-    'active_end_time': '1482163200',
     'topic_answer': [{
       'topic_answer_id': 1,
       'topic_id': 20,
@@ -47,10 +43,6 @@ const state = {
     'type': 'MORE',
     'topic_name': '题目二',
     'active_id': '1',
-    'active_title': '欢乐星期五标题',
-    'active_topic_phase': '第一周',
-    'active_start_time': '1479139200',
-    'active_end_time': '1482163200',
     'topic_answer': [{
       'topic_answer_id': 5,
       'topic_id': 21,
