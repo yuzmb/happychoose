@@ -1,16 +1,18 @@
 <template>
   <div>
     <router-view></router-view>
-    <span>11</span>
   </div>
 </template>
 
 <script>
 export default {
-  
+  name: 'App',
+  data() {
+    return {}
+  }
 }
 </script>
 
-<style>
+<style lang="less">
 
 </style>

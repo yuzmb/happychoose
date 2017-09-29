@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -8,6 +9,9 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  plugins: [
+    new CleanWebpackPlugin('./dist')
+  ],
   module: {
     rules: [
       {
@@ -32,10 +36,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.(css|less)$/, //如果是用npm3 还要多安装less模块
+        use: ['style-loader', 'css-loader', 'less-loader'], 
         exclude: /node_modules/
       }
+
     ]
   },
   resolve: {
@@ -44,7 +49,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js'
     },
     //自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
-    extensions: ['.js', '.json', '.scss', '.css', '.vue']
+    extensions: ['.js', '.json', '.less', '.css', '.vue']
   },
   devServer: {
     historyApiFallback: true,

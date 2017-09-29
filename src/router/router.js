@@ -14,12 +14,12 @@ export default [{
     name: 'home',
     component: home
   }, {
-    path: '/item',
+    path: 'item',
     name: 'item',
-    comment: item
+    component: item
   }, {
-    path: '/score',
+    path: 'score',
     name: 'score',
-    comment: score
+    component: score
   }]
 }]
