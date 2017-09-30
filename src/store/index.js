@@ -11,58 +11,84 @@ const state = {
   allTime: 0, //总共用时
   timer: '', //定时器
   itemDetail: [{
-    'topic_id': 20,
-    'active_topic_id': 4,
-    'type': 'ONE',
     'topic_name': '题目一',
-    'active_id': '1',
+    'active_topic_id': 1,
     'topic_answer': [{
       'topic_answer_id': 1,
-      'topic_id': 20,
-      'answer_name': '答案aaaa',
-      'is_standard_answer': 0
+      'answer_name': '答案aaaa'
     }, {
       'topic_answer_id': 2,
-      'topic_id': 20,
-      'answer_name': '正确答案',
-      'is_standard_answer': 0
+      'answer_name': '正确答案'
     }, {
       'topic_answer_id': 3,
-      'topic_id': 20,
-      'answer_name': '答案cccc',
-      'is_standard_answer': 0
+      'answer_name': '答案cccc'
     }, {
       'topic_answer_id': 4,
-      'topic_id': 20,
-      'answer_name': '答案dddd',
-      'is_standard_answer': 1
+      'answer_name': '答案dddd'
     }]
   }, {
-    'topic_id': 21,
-    'active_topic_id': 4,
-    'type': 'MORE',
+    'active_topic_id': 2,
     'topic_name': '题目二',
-    'active_id': '1',
     'topic_answer': [{
       'topic_answer_id': 5,
-      'topic_id': 21,
-      'answer_name': '答案A',
-      'is_standard_answer': 1
+      'answer_name': '随便选吧'
     }, {
       'topic_answer_id': 6,
-      'topic_id': 21,
-      'answer_name': '答案B',
-      'is_standard_answer': 0
+      'answer_name': '明显错的'
     }, {
       'topic_answer_id': 7,
-      'topic_id': 21,
-      'answer_name': '正确答案',
-      'is_standard_answer': 0
+      'answer_name': '正确答案'
     }, {
       'topic_answer_id': 8,
-      'topic_id': 21,
-      'answer_name': '答案D',
-      'is_standard_answer': 0
+      'answer_name': '你敢选吗'
+    }]
+  }, {
+    'active_topic_id': 3,
+    'topic_name': '题目三',
+    'topic_answer': [{
+      'topic_answer_id': 9,
+      'answer_name': '你猜这是对的吗'
+    }, {
+      'topic_answer_id': 10,
+      'answer_name': '错的吧'
+    }, {
+      'topic_answer_id': 11,
+      'answer_name': '我不知道'
+    }, {
+      'topic_answer_id': 12,
+      'answer_name': '正确答案'
+    }]
+  }, {
+    'active_topic_id': 4,
+    'topic_name': '题目四',
+    'topic_answer': [{
+      'topic_answer_id': 13,
+      'answer_name': '大前端'
+    }, {
+      'topic_answer_id': 14,
+      'answer_name': '大后端'
+    }, {
+      'topic_answer_id': 15,
+      'answer_name': '正确答案'
+    }, {
+      'topic_answer_id': 16,
+      'answer_name': '大数据'
+    }]
+  }, {
+    'active_topic_id': 5,
+    'topic_name': '题目五',
+    'topic_answer': [{
+      'topic_answer_id': 17,
+      'answer_name': '正确答案'
+    }, {
+      'topic_answer_id': 18,
+      'answer_name': '批评不自由'
+    }, {
+      'topic_answer_id': 19,
+      'answer_name': '赞美无意义'
+    }, {
+      'topic_answer_id': 20,
+      'answer_name': '哈哈哈哈哈哈'
     }]
   }],
   answerid: [] //答案ID

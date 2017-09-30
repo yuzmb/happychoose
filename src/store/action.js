@@ -6,8 +6,8 @@ export default {
       commit('addItemNum', 1)
     }
   },
-  //初始化信息
+  //初始化信息 //此处不用context 用 { commit } ES2015 的 参数解构 来简化代码
   actionInitializeData({ commit }) {
-    commit('initializeData')
+    commit('initializeData') //context.initializeData
   }
 }
