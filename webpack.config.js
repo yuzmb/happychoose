@@ -54,7 +54,8 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    port: 8888 //默认端口是8080
+    port: 8888, //默认端口是8080
+    disableHostCheck: true
   },
   performance: {
     hints: false
