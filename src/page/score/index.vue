@@ -23,7 +23,7 @@
         score: 0, //分数
         scoreTips: '', //分数提示
         rightAnswer: [2, 7, 12, 15, 17],
-        scoreTipsArr: ['你说，是不是把知识都还给小学老师了？','还不错，但还需要继续加油哦！','不要嘚瑟还有进步的空间！','智商离爆表只差一步了！','你也太聪明啦，我们换脑吧！']
+        scoreTipsArr: ['你说，是不是把知识都还给小学老师了？', '你说，你的知识是不是体育老师教的？','还不错，但还需要继续加油哦！','不要嘚瑟还有进步的空间！','智商离爆表只差一步了！','你也太聪明啦，我们换脑吧！']
       }
     },
     computed: mapState([
@@ -42,21 +42,24 @@
       //显示tips
       computedTips() {
         switch(this.score) {
-          case 20: 
+          case 0: 
             this.scoreTips = this.scoreTipsArr[0]
             break
-          case 40: 
+          case 20: 
             this.scoreTips = this.scoreTipsArr[1]
             break
-          case 60: 
+          case 40: 
             this.scoreTips = this.scoreTipsArr[2]
             break
-          case 80: 
+          case 60: 
             this.scoreTips = this.scoreTipsArr[3]
             break
-          case 100: 
+          case 80: 
             this.scoreTips = this.scoreTipsArr[4]
             break  
+          case 100: 
+            this.scoreTips = this.scoreTipsArr[5]
+            break 
         }
       },
       scoreCover() {
