@@ -6,7 +6,7 @@
     </header>
     <div v-if="fatherComponent === 'home'">
       <div class="center_img" ></div>
-      <router-link to="/happychoose/item" class="center_start"></router-link>
+      <router-link to="/item" class="center_start"></router-link>
     </div>
     <div v-if="fatherComponent === 'item'">
       <div class="center_question">
@@ -82,7 +82,7 @@
       questionSubmit() {
         if(typeof this.chooseNum === 'number') {
           this.addNum(this.chooseId)
-          this.$router.push('/happychoose/score')
+          this.$router.push('/score')
         }else {
           alert('您还没有选择答案哦!')
         }

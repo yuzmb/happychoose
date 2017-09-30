@@ -10,15 +10,15 @@ export default [{
   path: '/',
   component: App,
   children: [{
-    path: '/happychoose',
+    path: '',
     name: 'home',
     component: home
   }, {
-    path: '/happychoose/item',
+    path: 'item',
     name: 'item',
     component: item
   }, {
-    path: '/happychoose/score',
+    path: 'score',
     name: 'score',
     component: score
   }]
