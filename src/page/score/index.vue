@@ -64,7 +64,6 @@
       },
       scoreCover() {
         this.showCover = !this.showCover
-        console.log(1)
       }
     },
     created() {
